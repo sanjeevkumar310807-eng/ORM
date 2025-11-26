@@ -36,19 +36,19 @@ from django.contrib import admin
 
 class cars(models.Model):
     
-    car_model=models.CharField(max_length=20)
+         car_model=models.CharField(max_length=20)
     
-    car_name=models.CharField(max_length=20)
+         car_name=models.CharField(max_length=20)
     
-    manufactoring_date = models.DateField()
+         manufactoring_date = models.DateField()
     
-    colour=models.CharField(max_length=20)
-    
-    price=models.IntegerField()
+         colour=models.CharField(max_length=20)
+     
+         price=models.IntegerField()
 
 class carsAdmin(admin.ModelAdmin):
 
-    list_display=['car_model','car_name','manufactoring_date','colour','price']
+        list_display=['car_model','car_name','manufactoring_date','colour','price']
     
 
 # OUTPUT
